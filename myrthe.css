@@ -1,20 +1,23 @@
 div.scroller {
   background-color: #008B8B;
-  /* overflow: hidden; */
-  overflow: scroll;
+  overflow: auto;
   white-space: nowrap;
 }
 
 div.scroller img {
   display: inline-block;
   /* text-align: center; */
-  /* padding: 50px; */
+  padding: 20px;
   /* text-decoration: none; */
+}
+
+div.container-fluid {
+    overflow: hidden;
 }
 
 html, body {
     height: 100%;
-    /* overflow-y: hidden; */
+    overflow-y: hidden;
     overflow-x: hidden;
 }
 
