@@ -3,6 +3,7 @@ div.scroller {
   background-color: white;
   overflow: auto;
   white-space: nowrap;
+  font-size:0;
 }
 
 div.scroller img {
@@ -10,10 +11,6 @@ div.scroller img {
   /* text-align: center; */
   /* padding: 20px; */
   /* text-decoration: none; */
-}
-
-div.container-fluid {
-    overflow: hidden;
 }
 
 html, body {

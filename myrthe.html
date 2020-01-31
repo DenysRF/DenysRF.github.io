@@ -9,37 +9,52 @@
         <link rel="stylesheet" type="text/css" href="myrthe.css">
 
         <!-- JavaScript -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-        <script type='text/javascript' src='myrthe.js'></script>
+        <script
+          src="https://code.jquery.com/jquery-3.4.1.min.js"
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+          crossorigin="anonymous">
+        </script>
 
+        <script type='text/javascript' src='myrthe.js'></script>
         <title>Myrthe</title>
     </head>
     <body>
-        <!-- <div class="h-75 row align-items-center"> -->
-            <div class="scroller">
-              <img id="one" style="height:950px;" src="one.png">
-              <img id="two" style="height:950px;" src="two.png">
-              <img id="three" style="height:950px;" src="three.png">
-              <img id="four" style="height:950px;" src="four.png">
-              <!-- <img id="five" src="bird.jpg">
-              <img id="six" src="bird.jpg">
-              <img id="seven" src="bird.jpg">
-              <img id="eight" src="bird.jpg">
-              <img id="nine" src="bird.jpg">
-              <img id="ten" src="bird.jpg"> -->
-            </div>
-        <!-- </div> -->
+        <div class="scroller">
+            <img id="one" style="height:950px; padding:0px" src="images/1. Titelpagina.jpg">
+            <img id="two" style="height:950px; padding:0px" src="images/2. Inleiding.jpg">
+            <img id="three" style="height:950px; padding:0px" src="images/3. Beet!.jpg">
+            <img id="four" style="height:950px; padding:0px" src="images/4. Zeedieren.jpg">
+            <img id="five" style="height:950px;" src="images/5. Landdieren.jpg">
+            <img id="six" style="height:950px;" src="images/6. Vogels.jpg">
+            <img id="seven" style="height:950px;" src="images/7. Emoties bij mens en dier.jpg">
+            <img id="eight" style="height:950px;" src="images/8. Rotsschilderingen.jpg">
+            <img id="nine" style="height:950px;" src="images/9. Aardewerk.jpg">
+            <img id="ten" style="height:950px;" src="images/10. Nazca.jpg">
+            <img id="eleven" style="height:950px;" src="images/11. Egyptische rijk.jpg">
+            <img id="twelve" style="height:950px;" src="images/12. Moderne kunst.jpg">
+            <img id="thirteen" style="height:950px;" src="images/13. Theriantropen en halfmensen.jpg">
+            <img id="fourteen" style="height:950px;" src="images/14. Nederlandse maatschappij.jpg">
+            <img id="fifteen" style="height:950px;" src="images/15. Eigen werk.jpg">
+            <img id="sixteen" style="height:950px;" src="images/16. Conclusie.jpg">
+        </div>
+
         <div class="text-center navigator">
-            <button type="button" onclick="document.getElementById('one').scrollIntoView({behavior: 'smooth', inline: 'start'});">1</button>
-            <button type="button" onclick="document.getElementById('two').scrollIntoView({behavior: 'smooth', inline: 'start'});">2</button>
-            <button type="button" onclick="document.getElementById('three').scrollIntoView({behavior: 'smooth', inline: 'start'});">3</button>
-            <button type="button" onclick="document.getElementById('four').scrollIntoView({behavior: 'smooth', inline: 'start'});">4</button>
-            <!-- <button type="button" onclick="document.getElementById('five').scrollIntoView({behavior: 'smooth', inline: 'center'});">5</button> -->
-            <!-- <button type="button" onclick="document.getElementById('six').scrollIntoView({behavior: 'smooth', inline: 'center'});">6</button>
-            <button type="button" onclick="document.getElementById('seven').scrollIntoView({behavior: 'smooth', inline: 'center'});">7</button>
-            <button type="button" onclick="document.getElementById('eight').scrollIntoView({behavior: 'smooth', inline: 'center'});">8</button>
-            <button type="button" onclick="document.getElementById('nine').scrollIntoView({behavior: 'smooth', inline: 'center'});">9</button>
-            <button type="button" onclick="document.getElementById('ten').scrollIntoView({behavior: 'smooth', inline: 'center'});">10</button> -->
+            <button type="button" onclick="document.getElementById('one').scrollIntoView({behavior: 'smooth', inline: 'start'});">Het waarom</button>
+            <button type="button" onclick="document.getElementById('one').scrollIntoView({behavior: 'smooth', inline: 'end'});">Inleiding</button>
+            <button type="button" onclick="document.getElementById('two').scrollIntoView({behavior: 'smooth', inline: 'end'});">Symboliek<br>Beet!</button>
+            <button type="button" onclick="document.getElementById('three').scrollIntoView({behavior: 'smooth', inline: 'end'});">Symboliek<br>zeedieren</button>
+            <button type="button" onclick="document.getElementById('four').scrollIntoView({behavior: 'smooth', inline: 'end'});">Symboliek<br>landdieren</button>
+            <button type="button" onclick="document.getElementById('five').scrollIntoView({behavior: 'smooth', inline: 'end'});">Symboliek<br>vogels</button>
+            <button type="button" onclick="document.getElementById('six').scrollIntoView({behavior: 'smooth', inline: 'end'});">Dieren, mensen en emoties</button>
+            <button type="button" onclick="document.getElementById('seven').scrollIntoView({behavior: 'smooth', inline: 'end'});">Kunstgeschiedenis<br>rotsschilderingen</button>
+            <button type="button" onclick="document.getElementById('eight').scrollIntoView({behavior: 'smooth', inline: 'end'});">Kunstgeschiedenis<br>aardewerk</button>
+            <button type="button" onclick="document.getElementById('nine').scrollIntoView({behavior: 'smooth', inline: 'end'});">Kunstgeschiedenis<br>Nazcatekeningen</button>
+            <button type="button" onclick="document.getElementById('ten').scrollIntoView({behavior: 'smooth', inline: 'end'});">Kunstgeschiedenis<br>het oude Egypte</button>
+            <button type="button" onclick="document.getElementById('eleven').scrollIntoView({behavior: 'smooth', inline: 'end'});">Kunstgeschiedenis<br>moderne kunst</button>
+            <button type="button" onclick="document.getElementById('twelve').scrollIntoView({behavior: 'smooth', inline: 'end'});">Theriantropen<br>& halfdieren</button>
+            <button type="button" onclick="document.getElementById('thirteen').scrollIntoView({behavior: 'smooth', inline: 'end'});">Dieren in de <br>Nederlandse samenleving</button>
+            <button type="button" onclick="document.getElementById('fourteen').scrollIntoView({behavior: 'smooth', inline: 'end'});">Analyse van eigen werk</button>
+            <button type="button" onclick="document.getElementById('fifteen').scrollIntoView({behavior: 'smooth', inline: 'end'});">Conclusie</button>
         </div>
     </body>
 </html>
