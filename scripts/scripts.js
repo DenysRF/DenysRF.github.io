@@ -1,6 +1,3 @@
-$('#hamburger').load('blocks/sidebar.html');
-$('#sidebar').load('blocks/sidebar.html');
-
 function fill(item, index) {
     var col;
     if (index < left) {
