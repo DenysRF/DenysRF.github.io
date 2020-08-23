@@ -13,7 +13,7 @@
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
-        <script src="../../scripts/scripts.js"></script>
+        
 
         <title>Myrthe Majoor - Illustration</title>
     </head>
@@ -24,7 +24,7 @@
                 <nav class="navbar col-12">
                     <a class="navbar-brand" href="#">Myrthe Majoor</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse_nav">
-                        <img src="../../icons/list.svg" width="32" height="32">
+                        <img src="icons/list.svg" width="32" height="32">
                     </button>
                     <div class="collapse navbar-collapse" id="collapse_nav">
                         <div class="row" id="hamburger">
@@ -35,26 +35,52 @@
             </div>
 
             <div class="row">
-                <div class="d-none d-sm-none d-md-block col-lg-2 col-3 offset-lg-1 px-0 vh-100 sticky-top" id="sidebar">  
-                    <!-- Sidebar Content-->
+                <div class="d-none d-sm-none d-md-block col-lg-2 col-3 offset-lg-1 px-0 vh-100 sticky-top">
+                    <!-- Home button with picture -->
+                    <a class="d-none d-sm-none d-md-block" href="#"><img src="images/0.jpg" class="w-100" alt="Home"></a>
+                    <div id="sidebar">
+                        <!-- Sidebar Content-->
+                    </div>
                 </div>
 
                 <!-- Prikbord 2 Columns-->
                 <div class="col-12 col-md-9 col-xl-8">
                     <div class="row">
-                        Splashes of color
-                        Black and white
-                        Printing Techniques
-                        Digital Illustration
-                        <div class="col-lg-6" id="images_left">
+                        <div class="col-lg-6">
+                            <!-- Left column -->
+                            <a href="illustration/splashes_of_colour.html"> 
+                                <h1 class="text-center">Splashes of colour</h1>
+                                <img src="images/illustration/splashes_of_colour/all_about_the_cars/Volvo Amazon voor Pieter kleuren correct.jpg" class="img-fluid">
+                            </a>
+
+                            <a href="illustration/black_and_white.html"> 
+                                <h1 class="text-center">Black and white</h1>
+                                <img src="images/illustration/black_and_white/Beestje plus mannetje.jpg" class="img-fluid">
+                            </a>
+
                             
                         </div>
-                        <div class="col-lg-6" id="images_right">
+                        <div class="col-lg-6">
                             <!-- Right Column -->
+                            <a href="illustration/printing_techniques.html"> 
+                                <h1 class="text-center">Printing techniques</h1>
+                                <img src="images/illustration/printing_techniques/lithopgraphy/1.jpg" class="img-fluid">
+                            </a>
+
+                            <a href="illustration/digital_illustration.html"> 
+                                <h1 class="text-center">Digital illustration</h1>
+                                <img src="images/0.jpg" class="img-fluid">
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <script>
+            $('#hamburger').load('blocks/sidebar.html');
+            $('#sidebar').load('blocks/sidebar.html');
+        </script>
+        <script src="scripts/scripts.js"></script>
     </body>
 </html>
