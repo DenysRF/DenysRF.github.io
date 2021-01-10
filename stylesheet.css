@@ -4,3 +4,7 @@ body {
 
     background: url(/images/background.jpg);
 }
+
+/*.navbar-toggler{
+	z-index: 500;
+}*/
