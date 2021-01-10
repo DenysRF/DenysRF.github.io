@@ -3,7 +3,7 @@ body {
     /*font-size: 22px;*/
 
     background: url(/images/background.jpg);
-    background-width: 100%;
+    background-size: auto;
     background-repeat: no-repeat;
 }
 
