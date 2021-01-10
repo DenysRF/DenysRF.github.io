@@ -3,7 +3,11 @@ body {
     /*font-size: 22px;*/
 
     background: url(/images/background.jpg);
-    background-size: 100%;
+    background-size: cover;
+}
+
+img {
+    pointer-events: none;
 }
 
 /*.navbar-toggler{
