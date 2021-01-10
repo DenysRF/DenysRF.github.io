@@ -1,6 +1,5 @@
 body {
     font-family: 'Montserrat';
-    /*font-size: 22px;*/
 
     background: url(/images/background.jpg);
     background-size: 100% auto;
@@ -10,7 +9,3 @@ body {
 img {
     pointer-events: none;
 }
-
-/*.navbar-toggler{
-	z-index: 500;
-}*/
