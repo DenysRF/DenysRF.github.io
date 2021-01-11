@@ -17,7 +17,7 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
         
-        <title>Myrthe Majoor - Home</title>
+        <title>Myrthe Majoor - Monotypes</title>
     </head>
     <body>
         <div class="container-fluid">
@@ -54,42 +54,23 @@
                 <!-- Prikbord 2 Columns-->
                 <div class="col-12 col-md-9 col-xl-8">
                     <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-12" id="images">
                             <br><br><br>
-                            <!-- Content left -->
-                            <a href="dans_les_nuages_blancs.html">
-                                <img src="/images/home/dans_les_nuages_blancs.jpg" class="img-fluid">
-                            </a>
-                            <!-- <p>Dans les nuages blancs</p> -->
+                            <h3><b>Monotypes</b></h3>
+                            <br>
+                            <p>
+                                Monotypes are created by painting an image on an ink stone, or like I do, on a rubber mat. After painting on one of these surfaces, one presses a paper sheet on the painted surface to create a print. This print, we call a monotype.
+                            </p>
+                            <p>
+                                I used the monotyping technique for the making of my short animation film <b><i><a href="dans_les_nuages_blancs.html">Dans les nuages blancs</a></i></b>. I really enjoy combining monotyping with animation.
+                            </p>
+                            <p>
+                                Some examples of monotypes can be found below.
+                            </p>
 
-                            <a href="animals.html">
-                                <img src="/images/home/animals.jpg" class="img-fluid">   
-                            </a>
-                            <!-- <p>Animals</p> -->
-
-                            <a href="lithography.html">
-                                <img src="/images/home/lithography.jpg" class="img-fluid">    
-                            </a>
-                            <!-- <p>Lithography</p> -->
-
-                        </div>
-                        <div class="col-lg-6">
-                            <br><br><br>
-                            <!-- Content right -->
-                            <a href="linography.html">
-                                <img src="/images/home/linography.jpg" class="img-fluid">    
-                            </a>
-                            <!-- <p>Linography</p> -->
-                            <a href="black_white.html">
-                                <img src="/images/home/black_white.jpg" class="img-fluid">
-                            </a>
-                            <!-- <p>Black and white</p> -->
-
-                            <a href="dreamscapes.html">
-                                <img src="/images/home/dreamscapes.jpg" class="img-fluid">
-                            </a>
-                            <!-- <p>Dreamscapes</p> -->
-
+                            <br>
+                            <br>                            
+                            <!-- Content -->
                         </div>
                     </div>
                 </div>
@@ -97,12 +78,36 @@
         </div>
 
         <div class="myFooter">
-            <small>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Myrthe Majoor | All Rights Reserved</small>
+            Copyright &copy; <script>document.write(new Date().getFullYear())</script> Myrthe Majoor | All Rights Reserved
         </div>
 
         <script>
             $('#hamburger').load('/blocks/sidebar.html');
             $('#sidebar').load('/blocks/sidebar.html');
+        </script>
+
+        <script src="/scripts/scripts.js"></script>
+
+        <script>
+            var images = [
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6"
+
+            ];
+            var text = [
+                "",
+                "",
+                "",
+                "",
+                "",
+                "<br><br><br>"
+            ];
+            var path = "/images/monotypes/";
+            images.forEach(fill);
         </script>
     </body>
 </html>

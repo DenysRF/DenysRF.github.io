@@ -4,7 +4,7 @@ body {
     background: url(/images/background.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
 }
 
 .myFooter {
@@ -15,4 +15,5 @@ body {
 	background-color: black;
 	color: white;
 	text-align: center;
+	font-size: smaller;
 }
