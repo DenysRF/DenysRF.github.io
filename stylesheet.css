@@ -4,6 +4,17 @@ body {
     background: url(/images/background.jpg);
     background-size: 100% auto;
     background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.myFooter {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: black;
+	color: white;
+	text-align: center;
 }
 
 img {
