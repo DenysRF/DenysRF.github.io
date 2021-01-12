@@ -59,10 +59,18 @@
                                 <br><br><br>
                                 <h3><b>Printing techniques</b></h3>
                                 <br>
-                                <b>Lithography</b><br>
-                                <b>Linography</b><br>
-                                <b>Monotypes</b><br>
-                                <b>Etchings</b><br>
+                                <b onclick="document.getElementById('lithography').scrollIntoView({behavior: 'smooth'});">
+                                    Lithography
+                                </b><br>
+                                <b onclick="document.getElementById('linography').scrollIntoView({behavior: 'smooth'});">
+                                    Linography
+                                </b><br>
+                                <b onclick="document.getElementById('monotypes').scrollIntoView({behavior: 'smooth'});">
+                                    Monotypes
+                                </b><br>
+                                <b onclick="document.getElementById('etchings').scrollIntoView({behavior: 'smooth'});">
+                                    Etchings
+                                </b><br>
                             </div>
                         </div>
 
@@ -213,7 +221,7 @@
                 "<br><br><br>"
             ];
             path = "/images/monotypes/";
-            images.forEach(fill_by_name("monotypes"));
+            images.forEach(fill);
 
             col = "etchings";
             images = [
@@ -229,7 +237,7 @@
                 "<br><br><br>"
             ];
             path = "/images/etchings/";
-            images.forEach(fill_by_name("etchings"));
+            images.forEach(fill);
         </script>
     </body>
 </html>
