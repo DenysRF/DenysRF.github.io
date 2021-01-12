@@ -139,12 +139,18 @@
         <script src="/scripts/scripts.js"></script>
 
         <script>
+            var col = "lithography";
             var images = [
                 "1", //50
                 "2",
                 "3",
                 "4" //50
-
+            ];
+            var size = [
+                "w-50",
+                "img-fluid",
+                "img-fluid",
+                "w-50"
             ];
             var text = [
                 "",
@@ -153,8 +159,9 @@
                 "<br><br><br>"
             ];
             var path = "/images/lithography/";
-            images.forEach(fill_by_name("lithography"));
+            images.forEach(fill);
 
+            col = "linography";
             images = [
                 "1", //50
                 "2", //50
@@ -162,6 +169,13 @@
                 "4", //50
                 "5" //50
 
+            ];
+            size = [
+                "w-50",
+                "w-50",
+                "w-75",
+                "w-50",
+                "w-50"
             ];
             text = [
                 "",
@@ -171,8 +185,9 @@
                 "<br><br><br>"
             ];
             path = "/images/linography/";
-            images.forEach(fill_by_name("linography"));
+            images.forEach(fill);
 
+            col = "monotypes"
             images = [
                 "1",
                 "2",
@@ -180,7 +195,14 @@
                 "4",
                 "5",
                 "6" //75
-
+            ];
+            size = [
+                "img-fluid",
+                "img-fluid",
+                "img-fluid",
+                "img-fluid",
+                "img-fluid",
+                "w-75"
             ];
             text = [
                 "",
@@ -193,10 +215,14 @@
             path = "/images/monotypes/";
             images.forEach(fill_by_name("monotypes"));
 
+            col = "etchings";
             images = [
-                "1", //50
+                "1",
                 "2"
-
+            ];
+            size = [
+                "img-fluid",
+                "img-fluid"
             ];
             text = [
                 "",
@@ -204,7 +230,6 @@
             ];
             path = "/images/etchings/";
             images.forEach(fill_by_name("etchings"));
-
         </script>
     </body>
 </html>
