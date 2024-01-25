@@ -1,136 +1,36 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-VK2ER387B9"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+---
+layout: default
+title: Myrthe Majoor - Dreamscapes
+---
 
-            gtag('config', 'G-VK2ER387B9');
-        </script>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
-
-        <!-- CSS only -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
-
-        <!-- JS, Popper.js, and jQuery -->
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-        
-        <title>Myrthe Majoor - Dreamscapes</title>
-    </head>
-    <body>
-        <div class="container-fluid">
-            <!-- Hamburger bar -->
-            <div class="row text-center d-md-none d-lg-none d-xl-none">
-                <div class="col-12">
-                    <a href="/"><img src="images/home.png" width="100" height="110" alt="Home"></a>
-                </div>
-                <nav class="navbar col-12">
-                    <div class="col-12">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse_nav">
-                            <img src="icons/list.svg" width="32" height="32">
-                        </button>
-                        <div class="collapse navbar-collapse" id="collapse_nav">
-                            <div class="d-flex justify-content-center">
-                                <div class="row" id="hamburger">
-                                    <!-- Hamburger content -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
+<!-- Prikbord 2 Columns-->
+<div class="col-12 col-md-9 col-xl-8">
+    <div class="row">
+        <div class="col-lg-12" id="images">
+            <div class="text-center">
+                <br><br><br>
+                <h3><b>Dreamscapes</b></h3>
+                <br>
             </div>
 
-            <div class="row">
-                <div class="d-none d-sm-none d-md-block col-lg-2 col-3 offset-lg-1 px-0 vh-100 sticky-top">
-                    <!-- Home button with picture -->
-                    <a class="d-none d-sm-none d-md-block" href="/"><img src="images/home.png" class="w-100" alt="Home"></a>
-                    <div id="sidebar">
-                        <!-- Sidebar Content-->
-                    </div>
-                </div>
-
-                <!-- Prikbord 2 Columns-->
-                <div class="col-12 col-md-9 col-xl-8">
-                    <div class="row">
-                        <div class="col-lg-12" id="images">
-                            <div class="text-center">
-                                <br><br><br>
-                                <h3><b>Dreamscapes</b></h3>
-                                <br>
-                            </div>
-
-                            <p>
-                                <i>Dreamscapes</i> is a series of paintings that allows you to hop on my train of thought and see inside my brain.
-                            </p>
-                            <p>
-                                Upon seeing an object, an animal or a person, my brain associates the thing I see with all kinds of things that pop up in my head and follow each other up at a high speed. I like to imagine my brain as a universe of memories, objects and associations, and whenever I see or hear something, the train of thought takes off and races past all kinds of memories. 
-                                <br>This series shows my idea of the universe inside my brain and all the objects and memories that float in it.
-                            </p>
-                            <br>
-                            <br>                            
-                            <!-- Content -->
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <p>
+                <i>Dreamscapes</i> is a series of paintings that allows you to hop on my train of thought and see inside my brain.
+            </p>
+            <p>
+                Upon seeing an object, an animal or a person, my brain associates the thing I see with all kinds of things that pop up in my head and follow each other up at a high speed. I like to imagine my brain as a universe of memories, objects and associations, and whenever I see or hear something, the train of thought takes off and races past all kinds of memories. 
+                <br>This series shows my idea of the universe inside my brain and all the objects and memories that float in it.
+            </p>
+            <br>
+            <br>                            
+           <!-- Content -->
+           {% for item in site.data.dreamscapes %}
+           <div class="text-center">
+               <img src="assets/images/dreamscapes/{{item.image }}.jpg" class="{{ item.size }}">
+           </div>
+           <div class="text-center">
+               <p> {{ item.text }}</p>
+           </div>
+           {% endfor %}
         </div>
-
-        <div class="myFooter">
-            <small>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Myrthe Majoor</small>
-        </div>
-
-        <script>
-            $('#hamburger').load('/blocks/sidebar.html');
-            $('#sidebar').load('/blocks/sidebar.html');
-        </script>
-
-        <script src="/scripts/scripts.js"></script>
-
-        <script>
-            var col = "images";
-            var images = [
-                "1", //50
-                "2",
-                "3", //50
-                "4", //75
-                "5",
-                "6",
-                "7", //75
-                "8"
-            ];
-            var size = [
-                "w-50",
-                "img-fluid",
-                "w-50",
-                "w-75",
-                "img-fluid",
-                "img-fluid",
-                "w-75",
-                "img-fluid"
-            ];
-            var text = [
-                "<br><i>My brain is a universe</i><br><br>",
-                "<br><i>Planets exist around objects</i><br><br>",
-                "<br><i>The memory mass twists and turns</i><br><br>",
-                "<br><i>Worlds pass each other in opposing directions, sometimes colliding</i><br><br>",
-                "<br><i>A chaos of floating memories</i>.<br><br><br><br><br><p>Initially, the <i>Dreamscapes</i> project started with drawings of oldtimers. I drew my associations with the cars around them and created a painted collage of surroundings and subjects. However, later in the process, I decided that some of the images were stronger without the cars and therefore I cut some of them out. I still like the left-out parts, so I will share some of these below.</p><br>",
-                "<br><br>",
-                "<br>The drawing below was a commissioned drawing for Pieter Kok, who had seen the drawings of the oldtimers and liked to see his car in this style.<br><br>",
-                "<br><br><br>"
-            ];
-            var path = "/images/dreamscapes/";
-            images.forEach(fill_text_center);
-        </script>
-    </body>
-</html>
+    </div>
+</div>

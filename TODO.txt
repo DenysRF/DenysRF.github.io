@@ -1,0 +1,3 @@
+- navbar doorzichtig web versie
+    witte achtergrond voor mobiel
+

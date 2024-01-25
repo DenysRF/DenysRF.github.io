@@ -1,0 +1,7 @@
+- image: 1
+  size: w-50
+  text: <br><br>
+- image: 2
+  size: img-fluid
+  text: <br><br><br>
+  

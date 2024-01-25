@@ -1,0 +1,13 @@
+- image: 1
+  size: img-fluid
+  text: <br><br>
+- image: 2
+  size: img-fluid
+  text: <br><br>
+- image: 3
+  size: img-fluid
+  text: "
+This image is created for audio tour In the belly of the whale by Femke Bosma.<br>
+Monotypes form the basis of this illustration.
+  <br><br>
+  "

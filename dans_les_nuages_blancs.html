@@ -1,112 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="shortcut icon" type="image/png" href="/images/favicon.png">
+---
+layout: default
+title: Myrthe Majoor - Dans les nuages blancs
+---
 
-        <!-- CSS only -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-        <link rel="stylesheet" type="text/css" href="stylesheet.css">
-
-        <!-- JS, Popper.js, and jQuery -->
-        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-
-        
-        <title>Myrthe Majoor - Dans les nuages blancs</title>
-    </head>
-    <body>
-        <div class="container-fluid">
-            <!-- Hamburger bar -->
-            <div class="row text-center d-md-none d-lg-none d-xl-none">
-                <div class="col-12">
-                    <a href="/"><img src="images/home.png" width="100" height="110" alt="Home"></a>
-                </div>
-                <nav class="navbar col-12">
-                    <div class="col-12">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse_nav">
-                            <img src="icons/list.svg" width="32" height="32">
-                        </button>
-                        <div class="collapse navbar-collapse" id="collapse_nav">
-                            <div class="d-flex justify-content-center">
-                                <div class="row" id="hamburger">
-                                    <!-- Hamburger content -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </nav>
+<!-- Prikbord 2 Columns-->
+<div class="col-12 col-md-9 col-xl-8">
+    <div class="row">
+        <div class="col-lg-12" id="images">
+            <div class="text-center">
+                <br><br><br>
+                <h3><b>Dans les nuages blancs</b></h3>
+                <br>
+                Short animation film, 2020
+                <br>
+                <br>
             </div>
+            
+            <!-- Content -->
 
-            <div class="row">
-                <div class="d-none d-sm-none d-md-block col-lg-2 col-3 offset-lg-1 px-0 vh-100 sticky-top">
-                    <!-- Home button with picture -->
-                    <a class="d-none d-sm-none d-md-block" href="/"><img src="images/home.png" class="w-100" alt="Home"></a>
-                    <div id="sidebar">
-                        <!-- Sidebar Content-->
-                    </div>
-                </div>
-
-                <!-- Prikbord 2 Columns-->
-                <div class="col-12 col-md-9 col-xl-8">
-                    <div class="row">
-                        <div class="col-lg-12" id="images">
-                            <div class="text-center">
-                                <br><br><br>
-                                <h3><b>Dans les nuages blancs</b></h3>
-                                <br>
-                                Short animation film, 2020
-                                <br>
-                                <br>
-                            </div>
-                            
-                            <!-- Content -->
-                        </div>
-                    </div>
-                </div>
+            {% for item in site.data.dans_les_nuages_blancs %}
+            <div class="text-center">
+                <img src="assets/images/dans_les_nuages_blancs/{{item.image }}.jpg" class="{{ item.size }}">
             </div>
+            <div>
+                <p> {{ item.text }}</p>
+            </div>
+            {% endfor %}
         </div>
-        
-        <div class="myFooter">
-            <small>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Myrthe Majoor</small>
-        </div>
-
-        <script>
-            $('#hamburger').load('/blocks/sidebar.html');
-            $('#sidebar').load('/blocks/sidebar.html');
-        </script>
-
-        <script src="/scripts/scripts.js"></script>
-
-        <script>
-            var col = "images";
-            var images = [
-                "1",
-                "scan",
-                "2",
-                "3",
-                "4"
-            ];
-            var size = [
-                "w-75",
-                "img-fluid",
-                "img-fluid",
-                "img-fluid",
-                "img-fluid"
-            ];
-            var text = [
-                "<p><b><i>Dans les nuages blancs</i> is a short animation film based on childhood fantasies and dreams.</b><br><br> Albert Lamorisse's black and white movie named <i>Crin Blanc</i> (1953) formed a huge source of inspiration for the making of <i>Dans les nuages blancs</i>. <i>Crin Blanc</i> tells the story of a young boy who befriends a wild horse. The boy mounts the stallion without hesitation and they stride along the coastal landscape of the Camargue together. They are inseparable until the very end of the story, in which they disappear between the ocean waves. According to <i>Crin Blanc</i>, the boy and the wild horse can still be spotted together in the crashing waves until this very day.<br> Whilst watching <i>Crin Blanc</i> for the first time, I remembered my childhood fantasies. These dreams showed a lot of similarities with the storyline of <i>Crin Blanc</i>. I used to dream of finding that special bond with a horse too. I even tried to find this connection in real life by approaching half wild herds that roam the Dutch national parks. I blew in their nostrils and scratched around their withers, which are ways to say ‘hello’ in horse language. The horses, however, barely paid attention to me. In fact, one of them even bit me in the shoulder when I turned my back on him. Moments like these opened my eyes to the fact that the scenarios I had always dreamed of, were simply fantasies and would always remain dreams.<br> All in all, <i>Dans les nuages blancs</i> symbolizes the process of growing up. As the years passed by, I learned that the dreams I had as a child would only still exist if I put my head back in the clouds.",
-                "<br><br><i>Dans les nuages blancs</i> is built on monotypes, like the one shown above. I scanned the ink prints and brought them to life in Adobe Photoshop and other animation programmes. I love the surprising textures that come to life when making the monotypes. They create a dreamy and soft setting that reminds me of the dreamscapes I used to fantasize about.<br><br><b><i>Dans les nuages blancs</i> was nominated for the Van Vlissingen Fonds Award and the <i>Kepler Animatieprijs (Kepler Animation Award)</i> from the NFF, the Dutch Film Festival 2020.</b></p><br><p>The images shown below are stills from <i>Dans les nuages blancs</i>.</p>",
-                "<br><br>",
-                "<br><br>",
-                "<br><br><br>"
-            ];
-            var path = "/images/dans_les_nuages_blancs/";
-            images.forEach(fill);
-        </script>
-    </body>
-</html>
+    </div>
+</div>

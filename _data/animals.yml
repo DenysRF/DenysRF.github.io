@@ -1,0 +1,12 @@
+- image: 1 maraboe
+  size: img-fluid
+  text:
+- image: 2 hyena
+  size: img-fluid
+  text:
+- image: 3 flamingo
+  size: img-fluid
+  text:
+- image: 4 bear
+  size: img-fluid
+  text: <br><br><br>

@@ -1,0 +1,19 @@
+body {
+    font-family: 'Montserrat';
+
+    background: url(/assets/images/background.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    /*background-attachment: fixed;*/
+}
+
+.myFooter {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: #282828;
+	color: gray;
+	text-align: center;
+	font-size: smaller;
+}
