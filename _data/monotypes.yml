@@ -1,13 +1,22 @@
-- image: 1
-  size: img-fluid
-  text: <br><br>
+#- image: 1
+#  size: img-fluid
+#  text: <br><br><br>
+#  #Monotype for short film <b><a class="text-dark" href="dans_les_nuages_blancs">Dans les nuages blancs (2020)</a></b>
 - image: 2
   size: img-fluid
-  text: <br><br>
+  text: <br><br><br>
+  #Monotype for short film <b><a class="text-dark" href="home_of_the_giants">Home of the giants</a></b>. 
 - image: 3
   size: img-fluid
+  text: <br><br><br>
+  #Monotype for short film <b><a class="text-dark" href="home_of_the_giants">Home of the giants</a></b>.
+- image: 4
+  size: img-fluid
+  text: <br><br><br>
+  #Monotype for short film <b><a class="text-dark" href="home_of_the_giants">Home of the giants</a></b>.
+- image: 5
+  size: w-50
   text: "
-This image is created for audio tour In the belly of the whale by Femke Bosma.<br>
+This artwork is created for audio tour <i>In the belly of the whale</i> by Femke Bosma.<br>
 Monotypes form the basis of this illustration.
-  <br><br>
-  "
+"

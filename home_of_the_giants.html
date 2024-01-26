@@ -25,10 +25,9 @@ title: Myrthe Majoor - Home of the giants
                 The man in this story roams through a wide open landscape and stumbles upon a herd of wild musk oxen.
                 Neither musk ox nor man plans to make way for the other and tension grows.
                 Both parties fight for their space in the film frame and continuously try to outsmart the other.
-                The conflict will take some interesting twists and turns, until finally...
-            </p>
-            <p>
-                Who do you think will win?
+                The conflict takes some interesting twists and turns, until finally...
+                <br>
+                Who do you think wins?
             </p>
             <p>
                 Two central questions around which <i>Home of the Giants</i> revolves, are:
@@ -36,11 +35,11 @@ title: Myrthe Majoor - Home of the giants
             <br>
             <br>
             <p>
-                <i>Do you feel part of the natural world?</i>
+                Do you feel part of the natural world?
             </p>
             <br>
             <p>
-                <i>How much impact do you have on the world around you?</i>
+                How much impact do you have on the world around you?
             </p>
             <br>
             <br>
@@ -48,27 +47,38 @@ title: Myrthe Majoor - Home of the giants
                 In June 2022 and June 2023, I spent time in Dovrefjell in Norway to study the musk oxen and their surroundings.
                 This research included recording sound bits, sketching, taking photos and videos and discussing topics with experts.
                 After my first research trip to Dovrefjell, I created a short film that functions as a teaser film to promote Home of the Giants.
-                This short teaser film named <i>Moskus</i> can be viewed on <a href="https://vimeo.com/736096827" target="_blank" style="color: black"><b><i>Vimeo</i></b></a>.
+                This short teaser film named <i>Moskus</i> can be viewed on <a href="https://vimeo.com/736096827" target="_blank" style="color: black"><b>Vimeo</b></a>.
             </p>
             <p>
-                Feel free to tag along on this journey by following updates and behind the scenes footage on my <a href="https://www.instagram.com/myrthemajoor_art/" target="_blank" style="color: black"><b><i>Instagram page</i></b></a>.
+                Feel free to tag along on this journey by following updates and behind the scenes footage on my <a href="https://www.instagram.com/myrthemajoor_art/" target="_blank" style="color: black"><b>Instagram page</b></a>.
             </p>
+            <br>
             <p>
-                The production of <i>Home of the Giants</i> is supported by <a href="https://www.stimuleringsfonds.nl/en" target="_blank" style="color: black"><b><i>Creative Industries Fund NL</i></b></a>.
+                The production of <i>Home of the Giants</i> is supported by <a href="https://www.stimuleringsfonds.nl/en" target="_blank" style="color: black"><b>Creative Industries Fund NL</b></a>.
             </p>
-            <br>
-            <br>
-            <br>
+
+            <p>
+                There currently is a crowdfunding campaign running to cover the last of the production process, distribution and marketing.
+                <br>
+                Learn more about this on <a href="https://www.voordekunst.nl/projecten/16534-korte-animatiefilm-home-of-the-giants" target="_blank" style="color: black"><b>Voor de Kunst</b></a>.
+            </p>
+            <br><br>
+            <p>
+                The images below are stills from <i>Home of the Giants</i>.
+            </p>
+
+            <br><br>
+
+
+            {% for item in site.data.home_of_the_giants %}
             <div class="text-center">
-                <img src="assets/images/gif/musk_oxen_walking.gif" class="w-50">
-                <br>
-                <br>
-                <p>
-                    Musk oxen walking cycle, 2022
-                </p>
-            </div> 
-            <br>
-            <br>   
+                <img src="assets/images/home_of_the_giants/{{ item.image }}.jpg" class="{{ item.size }}">
+            </div>
+            <div class="text-center">
+                <p> {{ item.text }}</p>
+            </div>
+            {% endfor %}
+            <br><br><br>
         </div>
     </div>
 </div>
