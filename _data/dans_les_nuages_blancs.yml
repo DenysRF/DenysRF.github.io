@@ -1,6 +1,6 @@
 - image: 1
   size: w-75
-  text: "<p>
+  text: "<br><br><p>
     <b>
     <i>Dans les nuages blancs</i> 
     is a short animation film based on childhood fantasies and dreams.
@@ -25,7 +25,7 @@
     were simply fantasies and would always remain dreams.
     <br> All in all, <i>Dans les nuages blancs</i> symbolizes the process of growing up. 
     As the years passed by, I learned that the dreams I had as a child would only still exist if I put my head back in the clouds.
-  </p>"
+  </p><br>"
 - image: scan
   size: img-fluid
   text: "<br><br>
@@ -40,7 +40,7 @@
   <i>Kepler Animatieprijs (Kepler Animation Award)</i> 
   from the NFF, the Dutch Film Festival 2020.
   </b></p><br>
-  <p>The images shown below are stills from <i>Dans les nuages blancs</i>.</p>"
+  <p>The images shown below are stills from <i>Dans les nuages blancs</i>.</p><br>"
 - image: 2
   size: img-fluid
   text: <br><br>
