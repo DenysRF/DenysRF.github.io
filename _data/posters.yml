@@ -1,0 +1,15 @@
+- image: 1
+  size: img-fluid
+  text: Optie 1. Muskusossen<br><br>
+- image: 2
+  size: img-fluid
+  text: Optie 2. Muskusosstier<br><br>
+- image: 3
+  size: img-fluid
+  text: Optie 3. Rennende elanden<br><br>
+- image: 4
+  size: img-fluid
+  text: Optie 4. Elanden in rust<br><br>
+- image: 5
+  size: img-fluid
+  text: Optie 5. Moerassneeuwhoen<br><br>
