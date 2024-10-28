@@ -1,9 +1,18 @@
-- image: 1
+- image: 1_Muskusossen
   size: img-fluid
   text: <br><br><br>
-- image: 2
+- image: 2_elanden
   size: img-fluid
   text: <br><br><br>
-- image: 3
+- image: 3_schedel
+  size: img-fluid
+  text: <br><br><br>
+- image: foto muskusos
+  size: img-fluid
+  text: <br><br><br>
+- image: foto dovrefjell
+  size: img-fluid
+  text: <br><br><br>
+- image: foto twee mustusossen
   size: img-fluid
   text:
