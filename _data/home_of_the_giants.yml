@@ -1,18 +1,15 @@
-- image: 1_Muskusossen
+- image: foto twee muskusossen
   size: img-fluid
-  text: <br><br><br>
-- image: 2_elanden
-  size: img-fluid
-  text: <br><br><br>
-- image: 3_schedel
-  size: img-fluid
-  text: <br><br><br>
-- image: foto muskusos
-  size: img-fluid
-  text: <br><br><br>
+  text: <i><br>Photo of a muskox cow and a calf from last year
+        <br>Myrthe Majoor, 2022
+        <br><br><br></i>
 - image: foto dovrefjell
   size: img-fluid
-  text: <br><br><br>
-- image: foto twee mustusossen
+  text: <i><br>Photo of a small herd of muskoxen foraging next to a patch of ice
+        <br>Myrthe Majoor, 2023
+        <br><br><br></i>
+- image: muskusos tussen bomen
   size: img-fluid
-  text:
+  text: <i><br>Photo of a muskox cow in a birch forest
+        <br>Myrthe Majoor, 2022</i>
+
